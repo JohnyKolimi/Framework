@@ -33,7 +33,6 @@ public class BaseClass {
 		Reporter.log("Stetting up report and Test is getting ready", true);
 		excel=new ExcelDataProvider();
 		config=new ConfigDataProvider();
-		
 		ExtentHtmlReporter extent=new ExtentHtmlReporter("./Reports/OrangeHRM"+Helper.getCurrentDateTime()+".html");
 		report=new ExtentReports();
 		report.attachReporter(extent);
@@ -67,6 +66,4 @@ public class BaseClass {
 		}
 		report.flush();
 	}
-	
-	
 }
