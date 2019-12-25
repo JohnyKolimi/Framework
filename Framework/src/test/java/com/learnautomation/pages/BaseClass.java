@@ -51,6 +51,7 @@ public class BaseClass {
 	public void tearDown()
 	{
 		BrowserFactory.quitBrowser(driver);
+		Reporter.log("Browser has been closed", true);
 	}
 	@AfterMethod
 	public void tearDownMethod(ITestResult result) throws IOException
