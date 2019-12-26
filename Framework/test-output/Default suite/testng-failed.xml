@@ -6,7 +6,9 @@
       <class name="com.learnautomation.testcases.LoginTestHRM">
         <methods>
           <include name="loginToApp"/>
+          <include name="setUpSuit"/>
           <include name="tearDown"/>
+          <include name="tearDownMethod"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.learnautomation.testcases.LoginTestHRM -->
