@@ -59,11 +59,12 @@ public class BaseClass {
 		{
 			//Helper.captureScreenshot(driver);
 			logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
-		} else if(result.getStatus()==ITestResult.SUCCESS)
-		{
-			//Helper.captureScreenshot(driver);
-			logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
-		}
+		} 
+//			else if(result.getStatus()==ITestResult.SUCCESS)
+//		{
+//			//Helper.captureScreenshot(driver);
+//			logger.pass("Test Passed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
+//		}
 		report.flush();
 	}
 }
