@@ -12,7 +12,7 @@ public class LoginTestHRM extends BaseClass {
 
 	@Test(priority = 1)
 	public void loginToApp()
-	{
+	{		
 		logger=report.createTest("Login to HRM");
 		
 		LoginPage loginpage=PageFactory.initElements(driver, LoginPage.class);
