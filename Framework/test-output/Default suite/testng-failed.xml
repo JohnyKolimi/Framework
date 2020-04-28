@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.learnautomation.testcases.LoginTestHRM">
+      <class name="com.learnautomation.testcases.AddJobTitle">
         <methods>
-          <include name="loginToApp"/>
           <include name="setUpSuit"/>
+          <include name="addJobTitle"/>
           <include name="tearDown"/>
           <include name="tearDownMethod"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.learnautomation.testcases.LoginTestHRM -->
+      </class> <!-- com.learnautomation.testcases.AddJobTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -3,6 +3,8 @@ package com.learnautomation.pages;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -67,4 +69,23 @@ public class BaseClass {
 //		}
 		report.flush();
 	}
+	
+	// Re usable methods for actions
+	
+	public static void clickBtn(WebElement element)
+	{
+		element.click();
+	}
+	
+	public void sendKeys(WebElement element, String keys)
+	{
+		element.sendKeys(keys);
+	}
+	
+	public static void mouseHover(WebElement element, WebDriver driver)
+	{
+		Actions action= new Actions(driver);
+		action.moveToElement(element).build().perform();
+	}
+	
 }
